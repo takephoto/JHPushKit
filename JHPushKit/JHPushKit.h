@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <JPushConst.h>
 
 //! Project version number for JHPushKit.
 FOUNDATION_EXPORT double JHPushKitVersionNumber;

@@ -8,12 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		DD5070A41F24E0A000E126AD /* JHPushKit.h in Headers */ = {isa = PBXBuildFile; fileRef = DD5070A21F24E0A000E126AD /* JHPushKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DD5070AD1F24E12900E126AD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD5070AC1F24E12900E126AD /* Foundation.framework */; };
+		DD5070AF1F24E13C00E126AD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD5070AE1F24E13C00E126AD /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DD50709F1F24E0A000E126AD /* JHPushKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JHPushKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD5070A21F24E0A000E126AD /* JHPushKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JHPushKit.h; sourceTree = "<group>"; };
 		DD5070A31F24E0A000E126AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD5070AA1F24E0E200E126AD /* JHPushConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JHPushConst.h; sourceTree = "<group>"; };
+		DD5070AC1F24E12900E126AD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DD5070AE1F24E13C00E126AD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,6 +26,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD5070AF1F24E13C00E126AD /* UIKit.framework in Frameworks */,
+				DD5070AD1F24E12900E126AD /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -32,6 +39,7 @@
 			children = (
 				DD5070A11F24E0A000E126AD /* JHPushKit */,
 				DD5070A01F24E0A000E126AD /* Products */,
+				DD5070AB1F24E12800E126AD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -46,10 +54,28 @@
 		DD5070A11F24E0A000E126AD /* JHPushKit */ = {
 			isa = PBXGroup;
 			children = (
+				DD5070B01F24E19100E126AD /* Core */,
 				DD5070A21F24E0A000E126AD /* JHPushKit.h */,
 				DD5070A31F24E0A000E126AD /* Info.plist */,
+				DD5070AA1F24E0E200E126AD /* JHPushConst.h */,
 			);
 			path = JHPushKit;
+			sourceTree = "<group>";
+		};
+		DD5070AB1F24E12800E126AD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DD5070AE1F24E13C00E126AD /* UIKit.framework */,
+				DD5070AC1F24E12900E126AD /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DD5070B01F24E19100E126AD /* Core */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
